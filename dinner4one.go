@@ -56,7 +56,7 @@ func PromptMenuAndSelectCombo(c Combo) Combo {
 	fmt.Scanln(&input)
 
 	if input == 1 {
-		var c1 Combo = ("Hamburger", "Rice", 5.00)
+		var c1 Combo = NewCombo("Hamburger", "Rice", 5.00)
 		return c1
 	} else if input == 2 {
 		var c2 Combo = NewCombo("Burrito", "Rice", 4.99)
@@ -100,7 +100,7 @@ func main() {
 //	PromptMenuAndSelectCombo()
 	var  c1 Combo = NewCombo("Hamburger","fries")
 	
-	fmt.Println("Size ungrade prices: Small $0, Medium $2, Large $3")
+	fmt.Println("Size upgrade prices: Small $0, Medium $2, Large $3")
 	fmt.Println("What size would you like? (1 = small, 2 = Medium, 3 = Large)")
 	var drinksize int
 	fmt.Scanln(&drinksize)
